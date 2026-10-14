@@ -6,6 +6,9 @@
 
 <title>Minerva SecOps Consulting</title>
 
+<meta name="description"
+content="Penetration Testing, Red Team Assessments, Vulnerability Assessments, Security Audits, and Cybersecurity Consulting.">
+
 <style>
 
 :root{
@@ -33,23 +36,17 @@ body{
     background:var(--bg);
     color:var(--text);
     line-height:1.7;
-    overflow-x:hidden;
 }
-
-/* Background Grid */
 
 .grid-bg{
     position:fixed;
     inset:0;
+    z-index:-2;
     background-image:
       linear-gradient(rgba(59,130,246,.04) 1px, transparent 1px),
       linear-gradient(90deg, rgba(59,130,246,.04) 1px, transparent 1px);
     background-size:40px 40px;
-    pointer-events:none;
-    z-index:-2;
 }
-
-/* Glow Effects */
 
 .glow{
     position:fixed;
@@ -69,8 +66,6 @@ body{
     margin:auto;
 }
 
-/* Navigation */
-
 nav{
     padding:25px 0;
 }
@@ -80,12 +75,29 @@ nav{
     font-weight:600;
 }
 
-/* Hero */
-
 .hero{
-    min-height:80vh;
+    min-height:85vh;
     display:flex;
     align-items:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 16px;
+    margin-bottom:20px;
+    color:var(--primary-light);
+    border-radius:999px;
+    border:1px solid rgba(59,130,246,.3);
+    background:rgba(59,130,246,.08);
+}
+
+.hero-line{
+    width:120px;
+    height:4px;
+    border-radius:10px;
+    background:var(--primary);
+    margin-bottom:24px;
+    box-shadow:0 0 15px var(--primary);
 }
 
 .hero h1{
@@ -94,50 +106,26 @@ nav{
     margin-bottom:20px;
 }
 
-.hero-line{
-    width:120px;
-    height:4px;
-    background:var(--primary);
-    border-radius:10px;
-    margin-bottom:24px;
-    box-shadow:0 0 15px var(--primary);
-}
-
 .hero p{
-    font-size:1.25rem;
+    max-width:850px;
+    font-size:1.2rem;
     color:var(--muted);
-    max-width:700px;
-}
-
-.badge{
-    display:inline-block;
-    margin-bottom:20px;
-    padding:8px 16px;
-    color:var(--primary-light);
-    border:1px solid rgba(59,130,246,.3);
-    border-radius:25px;
-    background:rgba(59,130,246,.08);
-}
-
-.hero-buttons{
-    margin-top:35px;
 }
 
 .btn{
     display:inline-block;
+    margin-top:30px;
+    padding:14px 26px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
     background:var(--primary);
     color:white;
-    text-decoration:none;
-    padding:14px 24px;
-    border-radius:10px;
-    font-weight:600;
 }
 
 .btn:hover{
     background:#2563eb;
 }
-
-/* Sections */
 
 section{
     padding:80px 0;
@@ -150,7 +138,7 @@ section{
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:24px;
 }
 
@@ -162,35 +150,30 @@ section{
 }
 
 .card h3{
-    margin-bottom:12px;
+    margin-bottom:15px;
 }
 
 .card p{
     color:var(--muted);
 }
 
-/* Process */
-
 .process{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:24px;
+    gap:20px;
 }
 
-.step{
+.process-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:12px;
     padding:20px;
 }
-
-.step h3{
-    margin-bottom:10px;
-}
-
-/* About */
 
 .about{
     background:var(--card);
     border:1px solid var(--border);
-    border-radius:20px;
+    border-radius:16px;
     padding:40px;
 }
 
@@ -198,35 +181,32 @@ section{
     color:var(--muted);
 }
 
-/* Terminal */
-
 .terminal{
-    background:black;
+    background:#000;
     color:#22c55e;
-    padding:25px;
+    padding:30px;
     border-radius:12px;
-    font-family:Consolas, monospace;
-    max-width:700px;
+    max-width:850px;
     margin:auto;
-    border:1px solid #222;
-}
-
-footer{
-    padding:50px 0;
-    text-align:center;
-    color:var(--muted);
-    border-top:1px solid var(--border);
-}
-
-.binary{
-    opacity:.06;
-    margin-top:20px;
-    letter-spacing:4px;
-    font-family:monospace;
+    font-family:Consolas,monospace;
 }
 
 a{
     color:var(--primary-light);
+}
+
+footer{
+    border-top:1px solid var(--border);
+    padding:40px 0;
+    text-align:center;
+    color:var(--muted);
+}
+
+.binary{
+    margin-top:15px;
+    opacity:.08;
+    font-family:monospace;
+    letter-spacing:4px;
 }
 
 @media(max-width:768px){
@@ -248,48 +228,37 @@ a{
 <div class="container">
 
 <nav>
-    <div class="logo">
-        Minerva SecOps Consulting
-    </div>
+<div class="logo">
+Minerva SecOps Consulting
+</div>
 </nav>
 
 <section class="hero">
 
-    <div>
+<div>
 
-        <div class="badge">
-            Security Testing • Risk Assessment • Advisory
-        </div>
+<div class="badge">
+Penetration Testing • Red Teaming • Security Consulting
+</div>
 
-        <div class="hero-line"></div>
+<div class="hero-line"></div>
 
-        <h1>
-            Penetration Testing & Cybersecurity Consulting
-        </h1>
-
-<p>
-Minerva SecOps Consulting helps organizations identify security weaknesses, reduce risk, and improve resilience against evolving cyber threats.
-</p>
-
-<br>
+<h1>
+Penetration Testing & Cybersecurity Consulting
+</h1>
 
 <p>
-Through penetration testing, red team assessments, vulnerability assessments, and cybersecurity consulting, we provide practical, actionable insights that help organizations strengthen their security posture and make informed risk-management decisions.
-</p>
- 
-<br>
- 
-<p>
-Our goal is to deliver professional, high-quality cybersecurity services that support secure business operations, regulatory compliance, and long-term resilience.
+Minerva SecOps Consulting helps organizations identify security
+weaknesses, reduce risk, and improve resilience against evolving
+cyber threats through penetration testing, red team assessments,
+vulnerability assessments, security audits, and cybersecurity consulting.
 </p>
 
-        <div class="hero-buttons">
-            <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=LNL3X5CUW0eGDyd4cuJ-dSQESgrZz-dKuGQ7U2t94hZUNVZBWE5ZMzkyVFI2NDAyUDZLUjM2MVJXOC4u" class="btn">
-                Start a Consultation Request
-            </a>
-        </div>
+<a href="YOUR_MICROSOFT_FORM_LINK" class="btn">
+Request a Security Assessment
+</a>
 
-    </div>
+</div>
 
 </section>
 
@@ -302,35 +271,105 @@ Our goal is to deliver professional, high-quality cybersecurity services that su
 <div class="card">
 <h3>🛡️ Penetration Testing</h3>
 <p>
-Conduct authorized security assessments designed to identify and validate vulnerabilities within networks, systems, applications, and cloud environments. Engagements include detailed findings, risk ratings, and actionable remediation recommendations.
+Conduct authorized security assessments designed to identify and validate vulnerabilities
+within networks, systems, cloud environments, and security controls.
 </p>
 </div>
 
 <div class="card">
 <h3>🎯 Red Team Assessments</h3>
 <p>
-Simulate realistic adversary techniques to evaluate an organization's ability to detect, respond to, and recover from cybersecurity threats. Assessments are conducted within an approved scope and rules of engagement.
-</p>
-</div>
-    
-<div class="card">
-<h3>🔍 Vulnerability Assessments</h3>
-<p>
-Identify, prioritize, and report security weaknesses across infrastructure, applications, cloud services, and endpoints using a combination of automated analysis and manual validation.
+Simulate realistic adversary techniques to evaluate an organization's ability
+to detect, respond to, and recover from cyber threats.
 </p>
 </div>
 
 <div class="card">
-<h3>⚙️ Security Audits & Compliance</h3>
+<h3>🔍 Vulnerability Assessments</h3>
 <p>
-Evaluate cybersecurity controls, policies, procedures, and governance practices to support compliance initiatives and improve overall security maturity.
+Identify, prioritize, and report security weaknesses across infrastructure,
+applications, cloud services, and endpoints.
 </p>
 </div>
-    
+
+<div class="card">
+<h3>📋 Security Audits & Compliance</h3>
+<p>
+Evaluate cybersecurity controls, policies, procedures, governance practices,
+and readiness against security frameworks.
+</p>
+</div>
+
 <div class="card">
 <h3>⚙️ Cybersecurity Consulting</h3>
 <p>
-Provide strategic and technical guidance to help organizations strengthen security controls, reduce risk, and improve operational resilience.
+Provide strategic and technical guidance to strengthen security controls,
+reduce risk, and improve resilience.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Assessment Types</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>External Assessments</h3>
+<p>
+Evaluate publicly accessible infrastructure and identify exposure to
+internet-based threats.
+</p>
+</div>
+
+<div class="card">
+<h3>Internal Assessments</h3>
+<p>
+Assess the security of internal environments from the perspective of
+an authenticated attacker.
+</p>
+</div>
+
+<div class="card">
+<h3>Red Team Exercises</h3>
+<p>
+Simulate real-world attacks to evaluate security monitoring, detection,
+response, and resilience capabilities.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Why Minerva SecOps</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Independent Assessments</h3>
+<p>
+Objective testing and risk analysis focused on practical outcomes.
+</p>
+</div>
+
+<div class="card">
+<h3>Actionable Results</h3>
+<p>
+Clear findings, risk ratings, and remediation guidance that support decision-making.
+</p>
+</div>
+
+<div class="card">
+<h3>Security-Focused Expertise</h3>
+<p>
+Specialized services focused on offensive security assessments and risk management.
 </p>
 </div>
 
@@ -344,31 +383,31 @@ Provide strategic and technical guidance to help organizations strengthen securi
 
 <div class="process">
 
-<div class="card">
+<div class="process-card">
 <h3>1. Discovery</h3>
 <p>
-Understand objectives, scope, and requirements.
+Understand objectives, requirements, and business concerns.
 </p>
 </div>
 
-<div class="card">
+<div class="process-card">
 <h3>2. Rules of Engagement</h3>
 <p>
-Define authorized targets and testing parameters.
+Define scope, authorization, communication procedures, and testing constraints.
 </p>
 </div>
 
-<div class="card">
+<div class="process-card">
 <h3>3. Assessment</h3>
 <p>
-Execute testing within the approved scope.
+Conduct testing activities within the approved scope.
 </p>
 </div>
 
-<div class="card">
+<div class="process-card">
 <h3>4. Reporting</h3>
 <p>
-Deliver findings and remediation recommendations.
+Deliver findings, risk ratings, remediation guidance, and executive summaries.
 </p>
 </div>
 
@@ -383,21 +422,28 @@ Deliver findings and remediation recommendations.
 <h2 class="section-title">About</h2>
 
 <p>
-Minerva SecOps Consulting, LLC is a Vermont-based cybersecurity consulting firm focused on helping organizations identify, assess, and reduce security risk before it can be leveraged by malicious actors.
+Minerva SecOps Consulting, LLC is a Vermont-based cybersecurity consulting
+firm focused on helping organizations identify, assess, and reduce security
+risks before they can be leveraged by malicious actors.
 </p>
 
 <br>
 
 <p>
-Our services include penetration testing, red team assessments, vulnerability assessments, security audits, and cybersecurity consulting. We leverage industry-standard tools, proven methodologies, and professional cybersecurity expertise to evaluate and improve the security posture of client environments.
+Our services include penetration testing, red team assessments,
+vulnerability assessments, security audits, and cybersecurity consulting.
+We leverage industry-standard tools, proven methodologies, and professional
+cybersecurity expertise to evaluate and improve the security posture of
+client environments.
 </p>
 
 <br>
 
 <p>
-All security testing activities are conducted with written authorization, a clearly defined scope of work, and documented rules of engagement.
+Our mission is to deliver professional, high-quality cybersecurity services
+that support secure operations, regulatory compliance, and long-term resilience.
 </p>
-    
+
 </div>
 
 </section>
@@ -409,6 +455,7 @@ Contact
 </h2>
 
 <div class="terminal">
+
 $ contact Minerva SecOps Consulting
 
 <br><br>
@@ -425,9 +472,22 @@ Phone:
 
 <br><br>
 
-Website:
-www.minervasecops.com
+Consultation Request:
+<a href="https://forms.cloud.microsoft/r/rfv9rvcg6W">
+Submit Request
+</a>
+
 </div>
+
+</section>
+
+<section style="padding-top:10px;">
+
+<p style="color:#9ca3af;text-align:center;max-width:900px;margin:auto;">
+All penetration testing, red team, vulnerability assessment, and security audit
+activities are conducted only with written authorization and within a documented
+scope of work.
+</p>
 
 </section>
 
