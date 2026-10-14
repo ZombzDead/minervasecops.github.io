@@ -1,48 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Minerva SecOps Consulting</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minerva SecOps Consulting</title>
+
+<style>
+:root{
+    --bg:#0b1220;
+    --card:#111827;
+    --card2:#1f2937;
+    --text:#f9fafb;
+    --muted:#9ca3af;
+    --accent:#3b82f6;
+    --accent2:#60a5fa;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:
+      radial-gradient(circle at top right,#2563eb33,transparent 30%),
+      radial-gradient(circle at bottom left,#1d4ed833,transparent 35%);
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:1rem;
+}
+
+.hero p{
+    color:var(--muted);
+    font-size:1.2rem;
+    max-width:700px;
+    margin-bottom:2rem;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--accent);
+    color:white;
+    padding:14px 28px;
+    border-radius:10px;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.btn:hover{
+    background:var(--accent2);
+}
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:2rem;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:24px;
+}
+
+.card{
+    background:var(--card);
+    padding:24px;
+    border-radius:16px;
+    border:1px solid #1f2937;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:var(--muted);
+}
+
+.about{
+    background:var(--card);
+    border-radius:20px;
+    padding:40px;
+}
+
+.about p{
+    color:var(--muted);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:var(--accent2);
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    color:var(--muted);
+    padding:40px 0;
+    border-top:1px solid #1f2937;
+}
+</style>
 </head>
-<body style="font-family: Arial; max-width: 900px; margin: auto; padding: 40px;">
-  <h1>Minerva SecOps Consulting</h1>
 
-  <p>
-    Penetration Testing & Cybersecurity Consulting
-  </p>
+<body>
 
-  <h2>Services</h2>
+<section class="hero">
+    <div class="container">
 
-  <ul>
-    <li>External Network Penetration Testing</li>
-    <li>Internal Network Penetration Testing</li>
-    <li>Web Application Security Testing</li>
-    <li>Vulnerability Assessments</li>
-    <li>Security Reviews</li>
-    <li>Cybersecurity Consulting</li>
-  </ul>
+        <h1>Minerva SecOps Consulting</h1>
 
-  <h2>About</h2>
+        <p>
+            Penetration testing, vulnerability assessments,
+            web application security testing, and cybersecurity
+            consulting services designed to help organizations
+            identify and reduce risk before attackers do.
+        </p>
 
-  <p>
-    Minerva SecOps Consulting provides authorized penetration testing,
-    vulnerability assessments, and cybersecurity consulting services.
-  </p>
+        <a class="btn" href="mailto:sonya@minervasecops.com">
+            Request a Consultation
+        </a>
 
-  <h2>Contact</h2>
+    </div>
+</section>
 
-  <p>
-    Sonya Girr<br>
-    Founder & Principal Consultant<br><br>
+<section>
+    <div class="container">
 
-    Email:
-    <a href="mailto:SG@minervasecops.com">
-      SG@minervasecops.com
-    </a><br>
+        <h2 class="section-title">Services</h2>
 
-    Phone:
-    (802) 404-2682
-  </p>
+        <div class="grid">
+
+            <div class="card">
+                <h3>Penetration Testing</h3>
+                <p>
+                    Authorized assessments of networks,
+                    applications, and environments to identify
+                    exploitable vulnerabilities.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Web Application Security</h3>
+                <p>
+                    Security testing focused on authentication,
+                    authorization, business logic, and application risk.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Vulnerability Assessments</h3>
+                <p>
+                    Prioritized findings and remediation guidance
+                    for infrastructure and applications.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Security Consulting</h3>
+                <p>
+                    Practical guidance on security architecture,
+                    risk management, and security program maturity.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="about">
+
+            <h2 class="section-title">About</h2>
+
+            <p>
+                Minerva SecOps Consulting is a Vermont-based
+                cybersecurity consulting firm focused on delivering
+                actionable security assessments and professional
+                advisory services. Engagements are conducted with
+                authorized scope, defined rules of engagement,
+                and clear communication throughout the assessment process.
+            </p>
+
+            <br>
+
+            <strong>Sonya Girr</strong><br>
+            Founder & Principal Consultant
+
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container contact">
+
+        <h2 class="section-title">Contact</h2>
+
+        <p>
+            Email:
+            <a href="mailto:SG@minervasecops.com">
+                SG@minervasecops.com
+            </a>
+        </p>
+
+        <p>
+            Phone:
+            <a href="tel:+18024042682">
+                (802) 404-2682
+            </a>
+        </p>
+
+        <p>
+            Website:
+            <a href="https://www.minervasecops.com">
+                www.minervasecops.com
+            </a>
+        </p>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Minerva SecOps Consulting, LLC. All rights reserved.
+</footer>
+
 </body>
 </html>
